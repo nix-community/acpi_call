@@ -348,7 +348,7 @@ static ssize_t acpi_proc_read( struct file *filp, char __user *buff,
     return ret;
 }
 
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(5, 0, 0)
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(5, 6, 0)
 static struct proc_ops proc_acpi_operations = {
 	.proc_read = acpi_proc_read,
 	.proc_write = acpi_proc_write,
