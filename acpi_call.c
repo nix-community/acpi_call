@@ -150,7 +150,7 @@ static void do_acpi_call(const char * method, int argc, union acpi_object *argv)
 
 /** Decodes 2 hex characters to an u8 int
 */
-u8 decodeHex(char *hex) {
+static u8 decodeHex(char *hex) {
     char buf[3] = { hex[0], hex[1], 0};
     return (u8) simple_strtoul(buf, NULL, 16);
 }
